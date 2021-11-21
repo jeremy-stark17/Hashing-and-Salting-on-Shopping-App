@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
         ),
         SizedBox(height: SizeConfig.screenHeight * 0.08),
         Text(
-          "Dummy coins rewarded, Enjoy shopping.",
+          "Dummy coins reward, Enjoy shopping.",
           style: TextStyle(
             fontSize: getProportionateScreenWidth(30),
             fontWeight: FontWeight.bold,

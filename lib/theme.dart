@@ -1,3 +1,7 @@
+// ignore_for_file: duplicate_ignore, avoid_web_libraries_in_flutter
+
+// ignore: unused_import
+
 import 'package:flutter/material.dart';
 
 import 'constants.dart';
@@ -39,13 +43,15 @@ TextTheme textTheme() {
 }
 
 AppBarTheme appBarTheme() {
-  return AppBarTheme(
+  // ignore: dead_code, dead_code, dead_code
+  var appBarTheme3 = AppBarTheme(
     color: Colors.white,
     elevation: 0,
-    brightness: Brightness.light,
     iconTheme: IconThemeData(color: Colors.black),
-    textTheme: TextTheme(
-      headline6: TextStyle(color: Color(0XFF8B8B8B), fontSize: 18),
-    ),
   );
+  var appBarTheme32 = appBarTheme3;
+  var appBarTheme = appBarTheme32;
+  var appBarTheme2 = appBarTheme;
+  var appBarTheme22 = appBarTheme2;
+  return appBarTheme22;
 }

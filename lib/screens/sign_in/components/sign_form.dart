@@ -85,9 +85,9 @@ class _SignFormState extends State<SignForm> {
                   Navigator.pushNamed(context, HomeScreen.routeName);
                 } on FirebaseAuthException catch (e) {
                   if (e.code == 'user-not-found') {
-                    print('None found with that username.');
+                    print('None found with that email.');
                   } else if (e.code == 'wrong-password') {
-                    print('Wrong password provided for that username.');
+                    print('Wrong password provided for that email.');
                   }
                 }
               }
@@ -156,8 +156,8 @@ class _SignFormState extends State<SignForm> {
         return null;
       },
       decoration: InputDecoration(
-        labelText: "Username",
-        hintText: "Enter your Username",
+        labelText: "Email",
+        hintText: "Enter your Email",
         // If  you are using latest version of flutter then lable text and hint text shown like this
         // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
